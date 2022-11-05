@@ -30,7 +30,7 @@ ironfish start --datadir=~/myCustomFolder
 By default, your node will connect to the official Iron Fish bootstrap nodes.
 If you are developing and want to use a different bootstrap node, you can make the node connect to a different address with the `--bootstrap` flag.
 
-**Do not use a production bootstrap node that isn't offically endorsed by Iron Fish, you might end up on a malicious network.**
+**Do not use a production bootstrap node that isn't officially endorsed by Iron Fish, you might end up on a malicious network.**
 
 E.g.
 ```sh
@@ -48,3 +48,11 @@ ironfish start --port=9045
 ## Next steps
 
 The node will now sync your local chain with the network. It might take a while for the full sync to be complete. But you can still use the node in the meantime.
+
+## Downloading a chain snapshot
+
+To sync your local chain with the network more quickly you can download a snapshot of the chain database.
+
+```sh
+ironfish chain:download
+```

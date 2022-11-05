@@ -60,7 +60,7 @@ The Gossip Protocol is primarily used to broadcast new blocks and transactions t
 
 Back to the protocol. Once started, each node will then independently verify the incoming transactions before further broadcasting them out to other peers, and validate the incoming blocks before applying their encompassing transactions to the node’s local copy of the ledger (a.k.a. the blockchain). There is one main objective for the gossip protocol: when a message is broadcasted, every peer should receive the message as quickly as possible.
 
-The following section details how Iron Fish’s gossip based broadcast is currently implemented.
+The following section details how Iron Fish’s gossip-based broadcast is currently implemented.
 
 #### Basic Implementation
 
@@ -112,7 +112,7 @@ In the example below, Node A is connected to B, C, D, E, and stores a list of pe
 
 When Node A gossips a message, the propagation happens in two steps:
 
-1. Node A broadcasts to Nodes B, C, D and E.
+1. Node A broadcasts to Nodes B, C, D, and E.
 2. Node B forwards the message to G. It does not forward it to C and E because it knows that Node A is connected to them and already sent it. Node C forwards the message to H. Node D forwards to I and Node E to F.
 
 <img src ="/img/whitepaper/network/nodes5.svg" width="100%" role="presentation" />
@@ -128,4 +128,4 @@ When Node F gossips a message, in this example, the propagation happens in four 
 
 ##### Looking Forward
 
-We are exploring how to improve the block propagation at the application level before the main net launch. Instead of sending the entire block, a node will first send a header of the block. The peer node can then verify that it didn’t already receive it before requesting the data of the full block. We are also considering other implementations like [IBLTs](https://gist.github.com/gavinandresen/e20c3b5a1d4b97f79ac2) or [Minisketch](https://github.com/sipa/minisketch) to understand the pros and cons of each solution.
+We are exploring how to improve the block propagation at the application level before the main net launch. Instead of sending the entire block, a node will first send a header of the block. The peer node can then verify that it didn't already receive it before requesting the data of the full block. We are also considering other implementations like [IBLTs](https://gist.github.com/gavinandresen/e20c3b5a1d4b97f79ac2) or [Minisketch](https://github.com/sipa/minisketch) to understand the pros and cons of each solution.

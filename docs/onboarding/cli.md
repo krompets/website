@@ -17,7 +17,7 @@ ironfish accounts help
 
 E.g. for a command:
 ```sh
-ironfish ironfish accounts:pay help
+ironfish ironfish accounts:pay --help
 ```
 
 ### Node
@@ -98,7 +98,7 @@ config:get enableMiningDirector
 
 ### Miners
 #### miners:start
-Starts a miner and subscribe to new blocks for the node. The node has to be synced with the network for the miner to start mining.
+Starts a miner and subscribes to new blocks for the node. The node has to be synced with the network for the miner to start mining.
 
 ```sh
 ironfish miners:start
@@ -128,6 +128,7 @@ List mined block hashes
 ```sh
 ironfish miners:mined [START] [STOP]
 ```
+Optional arguments: [START] and [STOP] are either positive numbers that indicate the starting and stopping blocks or are negative to count backwards from the head of the chain.
 
 ### Networking
 #### peers:list
@@ -161,15 +162,15 @@ Creating a new account in command line
 ironfish accounts:create MyNewAccount
 ```
 
-#### accounts:publickey
+#### accounts:address
 Gets the current account's public key
 ```sh
-ironfish accounts:publickey
+ironfish accounts:address
 ```
 
 Gets a specific account's public key
 ```sh
-ironfish accounts:publickey -a MyNewAccount
+ironfish accounts:address MyNewAccount
 ```
 
 #### accounts:balance
@@ -181,6 +182,28 @@ ironfish accounts:balance
 Gets a specific account's public key
 ```sh
 ironfish accounts:balance -a MyNewAccount
+```
+
+#### accounts:notes
+Gets the current account's notes
+```sh
+ironfish accounts:notes
+```
+
+Gets a specific account's notes
+```sh
+ironfish accounts:notes -a MyNewAccount
+```
+
+#### accounts:transactions
+Gets the current account's transactions
+```sh
+ironfish accounts:transactions
+```
+
+Gets a specific account's transactions
+```sh
+ironfish accounts:transactions -a MyNewAccount
 ```
 
 #### accounts:pay
@@ -207,6 +230,7 @@ Export a part of the chain database to JSON
 ```sh
 ironfish chain:export [START] [STOP]
 ```
+Optional arguments: [START] and [STOP] are either positive numbers that indicate the starting and stopping blocks or are negative to count backwards from the head of the chain.
 
 #### chain:forks
 Try to detect forks that are being mined
@@ -223,7 +247,14 @@ ironfish chain:repair
 #### chain:show
 Shows the heaviest head and tail of the node's chain. Includes the last ten blocks in the chain.
 ```sh
-ironfish chain:show
+ironfish chain:show [START] [STOP]
+```
+Optional arguments: [START] and [STOP] are either positive numbers that indicate the starting and stopping blocks or are negative to count backwards from the head of the chain.
+
+#### chain:download
+Downloads and imports a snapshot of the chain database
+```sh
+ironfish chain:download
 ```
 
 ### Blocks

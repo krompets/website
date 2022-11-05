@@ -135,11 +135,18 @@ const data = {
           </p>
           <p className={styles.mainIntro}>
             The{" "}
-            <a href="https://docs.google.com/spreadsheets/d/1KoJBd3WYmjBcwX-EGfshDQ4tDHxtNo0O8KFlfZ8d0jg/edit#gid=1283773986">
+            <a href="https://airtable.com/shrNxbu0YxXL0G1qt">
               roadmap
             </a>{" "}
             is a living document and it *will* change as scope gets more
             defined.
+          </p>
+          <p className={styles.mainIntro}>
+            The{" "}
+            <a href="https://airtable.com/shrcTNHeo0I12OR1U">
+              project definitions
+            </a>{" "}
+            outline more detail on the work on the roadmap.
           </p>
         </div>
       </div>
@@ -220,7 +227,7 @@ const data = {
           description:
             "A core belief at Iron Fish is that privacy and ease-of-use are not in opposition. We'll be working hard on releasing an intuitive and beautiful Node Dashboard and Desktop Wallet. ",
           ctaText:
-            "Want to a sneak preview? Join our design channel on Discord",
+            "Want a preview? Join our design channel on Discord",
           ctaLink: "https://discord.gg/6kQdGZdm7S",
         },
       ],

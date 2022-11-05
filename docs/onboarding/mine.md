@@ -47,7 +47,7 @@ ironfish config:set blockGraffiti "<your graffiti here>"
 You can join a mining pool in order to increase your chances of mining a block. Block rewards are typically split among miners based on their respective contributions. We also run a basic mining pool that anyone can join. To get started, retrieve the public key of the account you want to use:
 
 ```sh
-ironfish accounts:publickey
+ironfish accounts:address
 ```
 
 And use that public key to join the mining pool:
@@ -68,7 +68,7 @@ ironfish miners:start --pool pool.ironfish.network --address <PUBLIC KEY>
 Make sure that your node is currently running. If you are using a different `datadir` argument to start your node, make sure to use it as well when starting the miner. For example:
 
 ```sh
-ironfish miners:start --datadir=~./ironfish2/
+ironfish miners:start --datadir=~/.ironfish2/
 ```
 
 #### The trees aren't the same size as the chain

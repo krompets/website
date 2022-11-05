@@ -68,17 +68,6 @@ const employees = [
     l: "#EAB898",
     t: "#FFE2CF",
   },
-  
-  {
-    name: "Alex",
-    title: "Engineer",
-    linkedin: "adcrn",
-    description:
-      "Resident hipster. Wrote a music player in Rust to listen to his massive (legal) music collection. Also wrote his own open-source BitTorrent tracker. No connection.",
-    r: "#1D0070",
-    l: "#3600CF",
-    t: "#AE92FF",
-  },
   {
     name: "Daniel",
     title: "Engineer",
@@ -110,6 +99,57 @@ const employees = [
     r: "#39703C",
     l: "#6C9E6C",
     t: "#A2C697",
+  },
+
+  {
+    name: "Hugh",
+    title: "Engineer",
+    linkedin: "hughy",
+    description:
+      "Previously built software for biotech. Enjoys word games and baking with his sourdough starter, the Yeastie Boys.",
+    r: "#483054",
+    l: "#76647f",
+    t: "#a498aa",
+  },
+
+  {
+    name: "Aditya",
+    title: "Community Manager",
+    description:
+      "Polyglot who loves movies, traveling, yoga, and Indian food. Has worked with some blockchain projects as a CM, and loves to engage with everyone as a Virtual Extrovert on Discord.",
+    r: "#ec5e2c",
+    l: "#f18661",
+    t: "#f6af96",
+  },
+
+  {
+    name: "Sanjey",
+    title: "Ops",
+    description:
+      "Xoogler turned startup vet. Web3 hobbyist turned enthusiast. Orlando Magic fan turned prisoner.",
+    r: "#ffffff",
+    l: "#0077C0",
+    t: "#ffffff",
+  },
+
+  {
+    name: "Yajun",
+    title: "Engineer",
+    description:
+      "Former Airbnb, Fast & Amazon. Libra who loves coding💻 and fashion👗🕶 Enjoy good 🧋🍷🥂🍹 Always craving for Korean BBQ and Jamôn Ibérico(brought back a whole ham leg from Spain and learned slicing). Want to bring more women into Web3.",
+    r: "#39ff14",
+    l: "#ff44cc",
+    t: "#9c17b5",
+  },
+
+  {
+    name: "Craig",
+    title: "General Counsel",
+    description:
+      "Former Department of Justice and TradFi.  Loves all things University of Michigan.  Manages 4th tier professional soccer team in Thailand via DAO.",
+    r: "#5cc8f4",
+    l: "#fef09b",
+    t: "#fce036",
   },
 
   {
@@ -172,7 +212,7 @@ function Careers() {
               </p>
               <p>
                 We are craftspeople who are excited to work on uncharted
-                territory in decentralized computing and cutting edge
+                territory in decentralized computing and cutting-edge
                 cryptography. While currently headquartered in San Francisco, we
                 are a remote-first company. We welcome talented people from all
                 backgrounds, throughout the United States and Canada.

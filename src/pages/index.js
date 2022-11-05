@@ -24,9 +24,9 @@ const features = [
     button: "Read Our Whitepaper",
   },
   {
-    id: "privacy-layer",
+    id: "privacy-roadmap",
     className: "sectionPrivacyLayer",
-    title: "A platform for the future of the internet",
+    title: "We're making privacy universal",
     description: (
       <>
         We’re building a new Layer 1 blockchain to become the universal privacy
@@ -117,6 +117,7 @@ function Feature({
   className,
   button,
   buttonLink,
+  disabledButton,
   title,
   description,
   companies = [],
@@ -153,6 +154,9 @@ function Feature({
               >
                 {button}
               </Link>
+            )}
+            {disabledButton && (
+              <div className="button button--outline button--disabled">{disabledButton}</div>
             )}
           </div>
         </div>
